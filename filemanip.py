@@ -8,7 +8,7 @@ filen = input("Anna tiedoston nimi: ")
 try:
     with open(filen, 'r') as f:
         content = f.read()
-except FileNotFoundError:
+except IOError:
     print("Virheellinen tiedostonimi")
     quit()
 
