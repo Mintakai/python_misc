@@ -3,11 +3,12 @@
 # Jos kaikki menee oikein, ohjelma tulostaa vastauksen "Saatiin tulos [tulos]". Jos annettu tiedoston nimi on virheellinen, tulostetaan "Virheellinen tiedostonnimi". 
 # Jos taas tiedoston sisältö on virheellinen eikä käänny kokonaisluvuksi, tulostetaan "Tiedoston sisältö virheellinen!". Toimiessaan ohjelma tulostaakin seuraavaa:
 
-try:
-    with open(input("Anna tiedoston nimi: "), 'r') as f:
-        content = f.read()
-    print(f"Saatiin tulos {int(content) + 313}")
-except IOError:
-    print("Virheellinen tiedoston nimi")
-except ValueError:
-    print("Tiedoston sisältö virheellinen!")
+while True:
+    try:
+        with open(input("Anna tiedoston nimi: "), 'r') as f:
+            content = f.read()
+        print(f"Saatiin tulos {int(content) + 313}")
+    except IOError:
+        print("Virheellinen tiedoston nimi")
+    except ValueError:
+        print("Tiedoston sisältö virheellinen!")
