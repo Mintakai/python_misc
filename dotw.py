@@ -97,14 +97,6 @@ def death_check(wizards):
             print(f"Game over! {winner} won with Stats: HP = {winner.hp}/{winner.max_hp}"
                 f" Mana = {winner.mana}")
             quit()
-                
-
-    ### BELOW NOT WORKING YET (HEALING) ###
-        #for x in range(len(wizards)):
-            #if (wizards[x].hp / wizards[x].max_hp) * 100 < 75:
-                #heal = wizards[x].cure_wounds()
-                #wizards[x].heal(heal)
-                #print(f"{wizards[x]} heals for {heal} health")
     
 def main():
     first_wizard = MagicUser("Blue wizard", randint(8, 12), randint(4, 10))
