@@ -15,4 +15,4 @@ def findDup(nums):
 
     return ptr1
 
-print(findDup([5,1,3,4,2,1]))
+print(findDup([5,1,3,4,2,1,9]))
